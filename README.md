@@ -1,2 +1,2 @@
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0000" /v "DriverDesc" /t REG_SZ /d "NVIDIA Video Controller" /f
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\Class\{4d36e968-e325-11ce-bfc1-08002be10318}\0001" /v "DriverDesc" /t REG_SZ /d "NVIDIA Secondary display" /f
+pnputil /disable-device "VMBUS\{562010c7-133a-495f-a962-645b73ffb190}"
+pnputil /enable-device "VMBUS\{562010c7-133a-495f-a962-645b73ffb190}"
